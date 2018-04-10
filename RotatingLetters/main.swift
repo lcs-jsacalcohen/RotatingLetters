@@ -4,7 +4,10 @@
 //INPUT
 
 //Loop forever until good input
-while 1 == 1 {
+var validInput = " " // outside of loop which means we can use it later on after loop
+
+prompt: while 1 == 1 {
+    
     //Prompt the use
     print("Input word is? ")
     
@@ -28,10 +31,31 @@ while 1 == 1 {
         
     }
 
+    //Test #3 check upper case
+    checking: for individualCharacter in givenInput {
+        
+        //Print the Character we are looking at
+        print(individualCharacter)
+        
+        //check the character
+        switch individualCharacter {
+        case "A",  "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" :
+            continue checking // ppk, go to next charcater in the string
+        default:
+            continue prompt //stop looking we found bad input
+            
+        }
+        
+    }
+    
     //If we got to this point we know inout is good
+    validInput = givenInput
     break //quit while loop and begin process
+    
     
 }
 
 // PROCESS
+print(validInput)
+
 // Now check the input
