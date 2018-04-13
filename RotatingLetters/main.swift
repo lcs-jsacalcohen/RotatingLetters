@@ -39,14 +39,16 @@ prompt: while 1 == 1 {
         
         //check the character
         switch individualCharacter {
-        case "A",  "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" :
+        case "H", "I", "N", "O", "S", "X" :
             continue checking // ppk, go to next charcater in the string
         default:
             continue prompt //stop looking we found bad input
             
+           
         }
         
     }
+    
     
     //If we got to this point we know inout is good
     validInput = givenInput
@@ -59,3 +61,10 @@ prompt: while 1 == 1 {
 print(validInput)
 
 // Now check the input
+
+print("YES")
+
+
+
+
+
