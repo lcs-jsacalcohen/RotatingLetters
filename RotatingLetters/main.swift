@@ -17,20 +17,20 @@ prompt: while 1 == 1 {
         
         //  If we got here, input is nil
         //Prompt Again
-    
+        
         continue // continue with the next iteration of the while loop
         
     }
-
+    
     //Test#2 Is the input corrent leangth
     if givenInput.count < 1 || givenInput.count > 30 {
-    
+        
         
         // If we got here input jis to short or its too long
         continue // prompt again
         
     }
-
+    
     //Test #3 check upper case
     checking: for individualCharacter in givenInput {
         
@@ -44,7 +44,7 @@ prompt: while 1 == 1 {
         default:
             continue prompt //stop looking we found bad input
             
-           
+            
         }
         
     }
